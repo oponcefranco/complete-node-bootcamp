@@ -1,0 +1,30 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Learning Node.js, Express, and MongoDB",
+  "main": "app.js",
+  "author": "Oleg Poncefranco",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:dev": "./node_modules/nodemon/bin/nodemon.js server.js",
+    "start:prod": "NODE_ENV=production ./node_modules/nodemon/bin/nodemon.js server.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.2"
+  }
+}
