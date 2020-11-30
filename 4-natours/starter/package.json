@@ -6,14 +6,18 @@
   "author": "Oleg Poncefranco",
   "license": "MIT",
   "private": true,
+  "engines": {
+    "node": ">=14.4.0"
+  },
   "scripts": {
-    "start:dev": "./node_modules/nodemon/bin/nodemon.js server.js",
+    "start": "./node_modules/nodemon/bin/nodemon.js server.js",
     "start:prod": "NODE_ENV=production ./node_modules/nodemon/bin/nodemon.js server.js"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "mongoose": "^5.10.15"
   },
   "devDependencies": {
     "nodemon": "^2.0.4",
