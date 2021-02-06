@@ -1,6 +1,5 @@
 {
-  "dependencies": {
-    "mongoose": "^5.10.15"
-  },
-  "private": true
+  "dependencies": {},
+  "private": true,
+  "devDependencies": {}
 }
