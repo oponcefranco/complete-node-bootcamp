@@ -1,6 +1,5 @@
 {
-  "dependencies": {
-    "mongoose": "^5.10.15",
-    "slugify": "^1.4.6"
-  }
+  "dependencies": {},
+  "private": true,
+  "devDependencies": {}
 }
