@@ -18,7 +18,6 @@ const handleDuplicateFieldsDB = (err) => {
 const handleValidationErrorDB = (err) => {
   const errors = Object.values(err.errors).map((el) => el.message);
   const message = `Invalid input data. ${errors.join('. ')}`;
-  //   const message = 'ERROR';
   return new AppError(message, 400);
 };
 
@@ -64,7 +63,8 @@ module.exports = (err, req, res, next) => {
     // if (error.name === 'CastError') error = handleCastErrorDB(error);
     if (error.kind === 'ObjectId') error = handleCastErrorDB(error);
     if (error.code === 11000) error = handleDuplicateFieldsDB(error);
-    if (error._message === "Tour validation failed") error = handleValidationErrorDB(error);
+    if (error._message === 'Tour validation failed')
+      error = handleValidationErrorDB(error);
     sendErrorProd(error, res);
   }
 };
