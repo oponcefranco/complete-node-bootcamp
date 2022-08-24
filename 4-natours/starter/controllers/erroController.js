@@ -7,7 +7,7 @@ const handleCastErrorDB = (err) => {
 
 const handleDuplicateFieldsDB = (err) => {
   // const value = err.errmsg.match(/(["'])(.*?[^\\])\1/)[0];
-  let error = { ...err };
+  const error = { ...err };
   error.keyValue = undefined;
   const value = err.keyValue.name;
   // console.log(value);
